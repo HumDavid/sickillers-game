@@ -15,7 +15,8 @@ The idea is to create a cooperative multiplayer (co-op) experience where players
 - Mechanics adjustments and detailing in progress  
 - Initial character design phase  
 
-Initial prototype of one of the playable classes (B Lymphocyte):
-
+Initial prototype of two of the playable classes (B Lymphocyte and Killer):
 
 ![Base model of the B Lymphocyte](docs/linfocitoB_basemodel.png)
+
+![Base model of the Killer](docs/killer_basemodel.png)
