@@ -299,6 +299,69 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b2ca7812c7e21b4280547a905e0f859, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1001 &1420869636
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1257559382060825753, guid: f42cc63324c002d46bc6b10c3e6f4dc6, type: 3}
+      propertyPath: m_Name
+      value: linfocito B
+      objectReference: {fileID: 0}
+    - target: {fileID: 2166679772079504550, guid: f42cc63324c002d46bc6b10c3e6f4dc6, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 5.3756924
+      objectReference: {fileID: 0}
+    - target: {fileID: 2166679772079504550, guid: f42cc63324c002d46bc6b10c3e6f4dc6, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2166679772079504550, guid: f42cc63324c002d46bc6b10c3e6f4dc6, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -9.262392
+      objectReference: {fileID: 0}
+    - target: {fileID: 2166679772079504550, guid: f42cc63324c002d46bc6b10c3e6f4dc6, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2166679772079504550, guid: f42cc63324c002d46bc6b10c3e6f4dc6, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2166679772079504550, guid: f42cc63324c002d46bc6b10c3e6f4dc6, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2166679772079504550, guid: f42cc63324c002d46bc6b10c3e6f4dc6, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2166679772079504550, guid: f42cc63324c002d46bc6b10c3e6f4dc6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2166679772079504550, guid: f42cc63324c002d46bc6b10c3e6f4dc6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2166679772079504550, guid: f42cc63324c002d46bc6b10c3e6f4dc6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1257559382060825753, guid: f42cc63324c002d46bc6b10c3e6f4dc6, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1889380929}
+    - targetCorrespondingSourceObject: {fileID: 1257559382060825753, guid: f42cc63324c002d46bc6b10c3e6f4dc6, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1889380928}
+  m_SourcePrefab: {fileID: 100100000, guid: f42cc63324c002d46bc6b10c3e6f4dc6, type: 3}
 --- !u!1 &1492637457
 GameObject:
   m_ObjectHideFlags: 0
@@ -499,6 +562,49 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1889380926 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1257559382060825753, guid: f42cc63324c002d46bc6b10c3e6f4dc6, type: 3}
+  m_PrefabInstance: {fileID: 1420869636}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1889380928
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1889380926}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b2ca7812c7e21b4280547a905e0f859, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!143 &1889380929
+CharacterController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1889380926}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Height: 2
+  m_Radius: 1.95
+  m_SlopeLimit: 45
+  m_StepOffset: 0.3
+  m_SkinWidth: 0.08
+  m_MinMoveDistance: 0.001
+  m_Center: {x: 0, y: -0.42, z: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -507,3 +613,4 @@ SceneRoots:
   - {fileID: 1492637459}
   - {fileID: 1643819372}
   - {fileID: 501808053}
+  - {fileID: 1420869636}
