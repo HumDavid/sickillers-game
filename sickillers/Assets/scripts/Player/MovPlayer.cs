@@ -55,19 +55,8 @@ public class MovPlayer : MonoBehaviour
             vertical = Vector3.zero;
         }
 
-        if (Input.GetKey(KeyCode.LeftShift))
-        {
-            while (speed < 12f)
-            {
-                speed += 1f * Time.deltaTime;
-            }
-        }
-        else {             
-            while (speed > 8f)
-            {
-                speed -= 1f * Time.deltaTime;
-            }
-        }
+        float targetSpeed = Input.GetKey(KeyCode.LeftShift) ? 12f : 8f;
+        speed = Mathf.MoveTowards(speed, targetSpeed, 20f * Time.deltaTime);
 
         Debug.Log(speed);
 
