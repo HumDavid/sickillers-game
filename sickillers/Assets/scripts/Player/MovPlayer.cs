@@ -60,7 +60,7 @@ public class MovPlayer : MonoBehaviour
         else {             
             while (speed > 8f)
             {
-                //speed -= 1f * Time.deltaTime;
+                speed -= 1f * Time.deltaTime;
             }
         }
 
