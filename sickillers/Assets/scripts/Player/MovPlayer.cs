@@ -16,7 +16,7 @@ public class MovPlayer : MonoBehaviour
 
     float gravity;
     float jumpSpeed;
-    float maxJumpHeight = 2.2f;
+    float maxJumpHeight = 3f;
     float timeToMaxHeight = 0.4f;
 
     void Start()
@@ -48,6 +48,11 @@ public class MovPlayer : MonoBehaviour
         if (Input.GetKey(KeyCode.Space) && controller.isGrounded)
         {
             vertical = jumpSpeed * Vector3.up;
+        }
+
+        if (vertical.y > 0 && (controller.collisionFlags & CollisionFlags.Above) != 0)
+        {
+            vertical = Vector3.zero;
         }
 
         if (Input.GetKey(KeyCode.LeftShift))
