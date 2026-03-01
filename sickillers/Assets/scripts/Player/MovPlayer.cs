@@ -19,6 +19,9 @@ public class MovPlayer : MonoBehaviour
     float maxJumpHeight = 3f;
     float timeToMaxHeight = 0.4f;
 
+    public float forwardInput;
+    public float strafeInput;
+
     void Start()
     {
         controller = GetComponent<CharacterController>();
@@ -31,8 +34,8 @@ public class MovPlayer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        float forwardInput = Input.GetAxis("Vertical");
-        float strafeInput = Input.GetAxis("Horizontal");
+        forwardInput = Input.GetAxisRaw("Vertical");
+        strafeInput = Input.GetAxisRaw("Horizontal");
 
         //force = input * speed * direction
         forward = forwardInput * speed * transform.forward;
@@ -55,21 +58,8 @@ public class MovPlayer : MonoBehaviour
             vertical = Vector3.zero;
         }
 
-        if (Input.GetKey(KeyCode.LeftShift))
-        {
-            while (speed < 12f)
-            {
-                speed += 1f * Time.deltaTime;
-            }
-        }
-        else {             
-            while (speed > 8f)
-            {
-                speed -= 1f * Time.deltaTime;
-            }
-        }
-
-        Debug.Log(speed);
+        float targetSpeed = Input.GetKey(KeyCode.LeftShift) ? 12f : 8f;
+        speed = Mathf.MoveTowards(speed, targetSpeed, 20f * Time.deltaTime);
 
         Vector3 finalVelocity = forward + strafe + vertical;
 
