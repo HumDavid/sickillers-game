@@ -4,5 +4,11 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Guilherme_TestsScene.unity
+    guid: a9cd4a61f1d737b4da58fa490a156904
+  - enabled: 1
+    path: Assets/Scenes/TestGameplay.unity
+    guid: 446f79e4eed59584bb16394a26d517bd
   m_configObjects: {}
