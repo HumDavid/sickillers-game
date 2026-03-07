@@ -6,11 +6,15 @@ public class AnimPlayer : MonoBehaviour
 {
     
     public Animator Anim;
+    public GameObject Cam;
+    public Transform Head, Arms;
     MovPlayer player;
+    CamPlayer camScript;
 
     void Start()
     {
         player = GetComponent<MovPlayer>();
+        camScript = Cam.GetComponent<CamPlayer>();
     }
 
     void Update()
@@ -23,5 +27,8 @@ public class AnimPlayer : MonoBehaviour
         {
             Anim.SetBool("walking", false);
         }
+
+        Arms.localEulerAngles = new Vector3(-camScript.rotationY, 0, 0);
     }
+
 }

@@ -9,7 +9,7 @@ public class CamPlayer : MonoBehaviour
     public Transform characterHead;
 
     float rotationX = 0;
-    float rotationY = 0;
+    public float rotationY = 0;
 
     float sensitivityX = 2;
     float sensitivityY = 2;
